@@ -3,11 +3,12 @@ module.exports = function(app) {
     // Routes
     // =============================================================
 
-    // Basic route that sends the user first to the AJAX Page
+    // Basic route that sends the user first to the home Page, applying routing paths to buttons in survey
     app.get("/survey", function (req, res) {
         res.sendFile(path.join(__dirname, "../public/survey.html"));
     });
-
+     
+    // "use" for default homepage
     app.use(function (req, res) {
         res.sendFile(path.join(__dirname, "../public/home.html"));
     });
