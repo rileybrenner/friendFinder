@@ -38,6 +38,8 @@ console.log("Sum of users score: " + userScores);
 console.log("Best match friend diff: " + bestMatch.friendDifference);
 console.log("+++++++===========");
 
+for(var i -0; i < f)
+
 
 });
 
