@@ -1,7 +1,7 @@
 // Dependencies
 // =============================================================
 var express = require("express");
-var path = require("path");
+
 var bodyParser = require("body-parser");
 
 
@@ -27,8 +27,8 @@ app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 // // Friend Finder Requirer
 // // =============================================================
 
-require("./routes/htmlRoutes")(app);
-require("./routes/apiRoutes")(app);
+require("./app/routing/htmlRoutes.js")(app);
+require("./app/routing/apiRoutes.js")(app);
 
 // Starts the server to begin listening
 // =============================================================
